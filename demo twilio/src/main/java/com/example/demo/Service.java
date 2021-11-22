@@ -10,7 +10,6 @@ public class Service {
 
     @Autowired
     public Service(@Qualifier("twilio") TwilioSmsSender smsSender) {
-        // If the provider needs to be updated, it can be done above. The current provider is Twilio.
         this.smsSender = smsSender;
     }
 

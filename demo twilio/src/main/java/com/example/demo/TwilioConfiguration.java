@@ -3,16 +3,17 @@ package com.example.demo;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 
-
-@ConfigurationProperties("twilio")
 @Configuration
+@ConfigurationProperties("twilio")
 public class TwilioConfiguration {
+
     private String accountSid;
-    private String auth_token;
-    private String trail_number;
+    private String authToken;
+    private String trialNumber;
 
     public TwilioConfiguration() {
-        }
+
+    }
 
     public String getAccountSid() {
         return accountSid;
@@ -22,19 +23,19 @@ public class TwilioConfiguration {
         this.accountSid = accountSid;
     }
 
-    public String getAuth_token() {
-        return auth_token;
+    public String getAuthToken() {
+        return authToken;
     }
 
-    public void setAuth_token(String auth_token) {
-        this.auth_token = auth_token;
+    public void setAuthToken(String authToken) {
+        this.authToken = authToken;
     }
 
-    public String getTrail_number() {
-        return trail_number;
+    public String getTrialNumber() {
+        return trialNumber;
     }
 
-    public void setTrail_number(String trail_number) {
-        this.trail_number = trail_number;
+    public void setTrialNumber(String trialNumber) {
+        this.trialNumber = trialNumber;
     }
 }
